@@ -1,0 +1,55 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<script type="text/javascript" src="JS/javascript.js"></script>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>Page 3 - Add the next cookie value</title>
+<link href="CSS/css_stylesheet.css" rel="stylesheet" type="text/css" />
+</head>
+
+<body>
+<form name="my_form">
+<table align="center" width="300" height="189" border="0" class="table_text" >
+  <tr>
+    <td height="31" colspan="3" align="center" style="font-size:24px">Please choose your options</td>
+  </tr>
+  <tr>
+    <td width="145">What car make do you prefer?</td>
+    <td width="71" height="40px" align="center" style="font-size:10px">
+    <input type="radio" name="car_make" value="Holden" />Holden<br />
+    <input type="radio" name="car_make" value="Toyota" />Toyota
+    </td>
+    <td width="72" align="center" style="font-size:10px">
+    <input type="radio" name="car_make" value="Ford" />Ford<br />
+    <input type="radio" name="car_make" value="VW" />VW
+    </td>
+  </tr>
+   <tr>
+    <td>What era were you born?</td>
+    <td height="40px" align="center" style="font-size:10px">
+    <input type="checkbox" id="60s" value="60s" onclick="disable_60s()" />60s<br />
+    <input type="checkbox" id="70s" value="70s" onclick="disable_70s()" />70s
+    </td>
+    <td height="40px" align="center" style="font-size:10px">
+    <input type="checkbox" id="80s" value="80s" onclick="disable_80s()" />80s<br />
+    <input type="checkbox" id="90s" value="90s" onclick="disable_90s()" />90s
+    </td>
+
+  </tr>
+  <tr>
+     <td height="40" align="center">OS of choice?</td>
+     <td height="40" colspan="2" align="center"><select id="os_choice">
+       <option value="Windows">Windows</option>
+       <option value="Linux">Linux</option>
+       <option value="Mac OS">Mac OS</option>
+       <option value="DOS">DOS</option>
+     </select></td>
+  </tr>
+  <tr>
+    <td height="40px" colspan="3" align="center" ><input type="button" value="Clear Options" onclick="clear_options()" /><input type="button" value="Proceed" onclick="options_cookies()" /></td>
+  </tr>
+ 
+</table>
+</form>
+</body>
+</html>
